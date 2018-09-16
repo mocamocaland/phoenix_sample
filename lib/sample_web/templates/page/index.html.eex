@@ -7,6 +7,7 @@ data =
     %{ "name" => "mocazaemon", "age" => 54, "team" => "Okayama mocamocaland", "position" => "degu Tencho"},
     %{ "name" => "mocasuke", "age" => 12, "team" => "Kouchi mocamocaland", "position" => "degu chiledren"},
 ]
+|> Enum.filter( fn ( record ) -> record[ "age" ] >= 43 end )
 %>
 <table border="1">
 <%= for record <- data do %>
