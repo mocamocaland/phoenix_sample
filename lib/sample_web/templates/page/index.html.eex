@@ -3,7 +3,7 @@ data =
 [
     %{ "name" => "mocamocaland", "age" => 24, "team" => "Tokyo mocamocaland", "position" => "degu CEO"},
     %{ "name" => "mocajirou", "age" => 22, "team" => "Kanagawa mocamocaland", "position" => "degu CSO"},
-    %{ "name" => "mocajirou", "age" => 75, "team" => "Fukuoka mocamocaland", "position" => "degu CZO"},
+    %{ "name" => "mocasaburou", "age" => 75, "team" => "Fukuoka mocamocaland", "position" => "degu CZO"},
     %{ "name" => "mocazaemon", "age" => 54, "team" => "Okayama mocamocaland", "position" => "degu Tencho"},
     %{ "name" => "mocasuke", "age" => 12, "team" => "Kouchi mocamocaland", "position" => "degu chiledren"},
 ]
