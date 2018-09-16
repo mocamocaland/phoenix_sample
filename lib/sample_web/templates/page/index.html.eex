@@ -7,7 +7,7 @@ data =
     %{ "name" => "mocazaemon", "age" => 54, "team" => "Okayama mocamocaland", "position" => "degu Tencho"},
     %{ "name" => "mocasuke", "age" => 12, "team" => "Kouchi mocamocaland", "position" => "degu chiledren"},
 ]
-|> Enum.filter( fn ( record ) -> record[ "age" ] >= 43 end )
+|> Enum.osrt( fn ( record_current, record_next ) -> record_current[ "age" ] < record_next[ "age" ] end )
 %>
 <table border="1">
 <%= for record <- data do %>
