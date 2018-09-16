@@ -1,36 +1,20 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-</div>
-
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
-  </div>
-</div>
+<%
+data = 
+[
+    %{ "name" => "mocamocaland", "age" => 24, "team" => "Tokyo mocamocaland", "position" => "degu CEO"},
+    %{ "name" => "mocajirou", "age" => 22, "team" => "Kanagawa mocamocaland", "position" => "degu CSO"},
+    %{ "name" => "mocajirou", "age" => 75, "team" => "Fukuoka mocamocaland", "position" => "degu CZO"},
+    %{ "name" => "mocazaemon", "age" => 54, "team" => "Okayama mocamocaland", "position" => "degu Tencho"},
+    %{ "name" => "mocasuke", "age" => 12, "team" => "Kouchi mocamocaland", "position" => "degu chiledren"},
+]
+%>
+<table border="1">
+<%= for record <- data do %>
+<tr>
+  <td><%= record[ "name" ]%></td>
+  <td><%= record[ "age" ] %></td>
+  <td><%= record[ "team" ] %></td>
+  <td><%= record[ "position" ]%></td>
+</tr>
+<% end %>
+</table>
